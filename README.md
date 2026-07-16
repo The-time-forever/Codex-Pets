@@ -23,11 +23,38 @@ Codex-Pets/
         └── spritesheet.webp
 ```
 
-## 安装
+## 安装（推荐：不用命令行，直接拖文件夹）
 
-### Windows PowerShell
+### Windows
 
-将整个 Pet 文件夹复制到当前用户的 Codex Pet 目录：
+1. 打开"文件资源管理器"（快捷键 `Win + E`）。
+2. 在顶部地址栏输入 `%USERPROFILE%\.codex\pets`，按回车。
+   - 如果提示目录不存在，先手动新建：在 `%USERPROFILE%\.codex` 目录下新建一个名为 `pets` 的文件夹（如果 `.codex` 也不存在，就先在用户主目录下新建 `.codex`，再在里面新建 `pets`）。
+3. 打开另一个资源管理器窗口，进入下载好的 `Codex-Pets\The Spike Cross` 文件夹。
+4. 把想要安装的 Pet 文件夹（比如整个 `hari-midnight` 文件夹）直接拖到第 2 步打开的 `pets` 窗口里。
+   - 想装多个，就把每个 Pet 的文件夹都拖过去。
+   - 注意：一定要拖整个文件夹，不要只拖里面的某个文件。
+
+### macOS
+
+1. 打开"访达"（Finder）。
+2. 按 `Cmd + Shift + G`，输入 `~/.codex/pets`，回车前往（如果不存在会提示，需要先手动新建 `~/.codex` 和里面的 `pets` 文件夹）。
+3. 打开另一个访达窗口，进入下载好的 `Codex-Pets/The Spike Cross` 文件夹。
+4. 把想要安装的 Pet 文件夹整个拖到 `pets` 窗口里。
+
+安装完成后，重启 Codex，让应用重新读取 Pet 文件。安装后的目录结构应类似：
+
+```text
+Windows: %USERPROFILE%\.codex\pets\hari-midnight\pet.json
+macOS/Linux: ~/.codex/pets/hari-midnight/pet.json
+```
+
+### 进阶：用命令行安装（适合熟悉终端的用户）
+
+<details>
+<summary>点击展开命令行安装方法</summary>
+
+**Windows PowerShell**
 
 ```powershell
 $pets = Join-Path $env:USERPROFILE ".codex\pets"
@@ -44,19 +71,14 @@ New-Item -ItemType Directory -Force $pets | Out-Null
 Copy-Item -Recurse -Force ".\The Spike Cross\hari-midnight" $pets
 ```
 
-### macOS / Linux
+**macOS / Linux**
 
 ```bash
 mkdir -p "$HOME/.codex/pets"
 cp -R "./The Spike Cross/hari-midnight" "./The Spike Cross/xu-sha-la" "$HOME/.codex/pets/"
 ```
 
-安装完成后，重启 Codex，让应用重新读取 Pet 文件。安装后的目录应类似：
-
-```text
-Windows: %USERPROFILE%\.codex\pets\hari-midnight\pet.json
-macOS/Linux: ~/.codex/pets/hari-midnight/pet.json
-```
+</details>
 
 ## 注意事项
 
