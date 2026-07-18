@@ -110,6 +110,6 @@ cp -R "./The Spike Cross/hari-midnight" "./The Spike Cross/xu-sha-la" "$HOME/.co
 
 提交新 Pet 时，请尽量附上 Pet 名称、简短介绍、预览图或演示说明，方便审核和使用。
 
-目前仓库内仅有 The Spike Cross 分类的部分角色，个人时间和精力有限，素材质量难免有不足之处，敬请谅解。
+目前仓库内仅有 The Spike Cross 分类的部分角色，个人时间和精力有限，素材质量难免有不足之处，敬请谅解。也欢迎各位大佬进行优化和指正。
 
 ![The Spike Cross](maxresdefault.jpg)
