@@ -88,6 +88,15 @@ cp -R "./The Spike Cross/hari-midnight" "./The Spike Cross/xu-sha-la" "$HOME/.co
 - 如果目标目录中已有同名 Pet，复制时会覆盖旧版本；如需保留旧版本，请先备份。
 - 这些 Pet 使用 `spriteVersionNumber: 2`，需要支持 Codex 自定义 Pet 的版本。
 
+## 制作自定义 Pet
+
+如果想自己制作一个 Pet，可以使用 Codex 内置的 `Hatch Pet` 技能包：
+
+1. 准备一张参考图（角色立绘、头像等）。
+2. 在 Codex 对话框中粘贴参考图，并输入 `/Hatch Pet`，附上你的提示词（Prompt）。
+3. 等待孵化完成。
+4. 如想分享，可将生成的文件导出到对应分类目录下的 Pet 文件夹中。
+
 ## 贡献
 
 欢迎提交新的 Pet、动画素材、安装改进或文档修正。
@@ -100,3 +109,7 @@ cp -R "./The Spike Cross/hari-midnight" "./The Spike Cross/xu-sha-la" "$HOME/.co
 6. 创建 Pull Request，并简要说明改动内容。
 
 提交新 Pet 时，请尽量附上 Pet 名称、简短介绍、预览图或演示说明，方便审核和使用。
+
+目前仓库内仅有 The Spike Cross 分类的部分角色，个人时间和精力有限，素材质量难免有不足之处，敬请谅解。
+
+![The Spike Cross](maxresdefault.jpg)
